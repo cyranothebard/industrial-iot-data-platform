@@ -121,6 +121,42 @@ See [`docs/data-dictionary.md`](docs/data-dictionary.md) for full field-level do
 
 ---
 
+## Operational Decisions Enabled
+
+The purpose of this platform is not reporting.
+
+The purpose is improving decisions.
+
+The analytics produced by the platform support several operational decision categories:
+
+### Reliability Decisions
+- Prioritize preventive maintenance activities
+- Identify high-risk assets
+- Allocate maintenance resources more effectively
+- Reduce unplanned downtime
+
+### Production Decisions
+- Identify bottlenecks
+- Improve production scheduling
+- Balance throughput across production lines
+- Improve overall equipment effectiveness
+
+### Quality Decisions
+- Detect emerging quality issues earlier
+- Prioritize root-cause investigations
+- Reduce scrap and rework
+- Improve process consistency
+
+### Data Quality Decisions
+- Identify unreliable data sources
+- Prioritize remediation efforts
+- Improve trust in analytics
+- Increase readiness for future AI systems
+
+The platform therefore transforms operational information into actionable decision support rather than simply generating reports.
+
+---
+
 ## Data Quality Layer
 
 This is the most important layer in the platform for AI readiness.
@@ -236,7 +272,38 @@ pytest tests/ -v
 
 ---
 
+## BridgeOps Framework Alignment
+
+This project demonstrates the early stages of the BridgeOps Framework.
+
+| Framework Stage | Status |
+|----------------|--------|
+| Operations | ✓ Demonstrated |
+| Data | ✓ Demonstrated |
+| Insights | ✓ Demonstrated |
+| Decisions | ✓ Partially Demonstrated |
+| Automation | Future Extension |
+| AI-Enabled Optimization | Future Extension |
+
+The primary objective of this project is to show how operational information can be transformed into trusted analytical insight.
+
+Future portfolio projects extend the framework into knowledge management, decision support, automation, and AI-enabled optimization.
+
+---
+
 ## AI Readiness
+
+Many organizations attempt predictive maintenance, anomaly detection, or industrial AI initiatives before establishing reliable operational data foundations.
+
+This project intentionally reverses that sequence.
+
+Rather than beginning with machine learning models, the platform focuses on data quality, context, governance, integration, and trusted operational analytics.
+
+The result is a foundation capable of supporting future AI initiatives at scale.
+
+This approach reflects a core BridgeOps principle: **AI readiness begins with reliable operational information.**
+
+### Feature Tables for Future AI
 
 The Gold layer is structured to support the next project stage: Predictive Maintenance Platform v2.
 
@@ -288,10 +355,12 @@ A sensor reading of 180°C means nothing without knowing whether the machine is 
 
 ---
 
-## Related Content
+## Related BridgeOps Content
 
-- [BridgeOps Essay: Why Data Foundations Come Before AI Scaling](https://bridge-ops.ai/blog/en/2026-06-data-foundations-before-ai.html)
-- [BridgeOps Framework: Operations → Data → Insights → Automation → AI](https://bridge-ops.ai/bridgeops-framework/)
+- [BridgeOps Framework](https://bridge-ops.ai/bridgeops-framework/)
+- [Bridging Operations, Data, and AI](https://bridge-ops.ai/en/insights/bridging-operations-data-and-ai/)
+- [Why Industrial AI Projects Fail](https://bridge-ops.ai/en/insights/why-industrial-ai-projects-fail/)
+- [Why Data Foundations Come Before AI Scaling](https://bridge-ops.ai/blog/en/2026-06-data-foundations-before-ai.html)
 - [Portfolio: All Projects](https://bridge-ops.ai/projects/)
 
 ---
