@@ -112,7 +112,7 @@ graph TB
 
 ## Production Evolution Path
 
-```
+```text
 Current (MVP)           → Next Step              → Production Target
 ─────────────────────────────────────────────────────────────────────
 Local Parquet files     → Delta Lake (OSS)       → Databricks Lakehouse
