@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  pipeline:
+    build: .
+    container_name: iot-platform-pipeline
+    volumes:
+      - ./data:/app/data
+    command: python run_pipeline.py
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  dashboard:
+    build: .
+    container_name: iot-platform-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    command: streamlit run src/dashboard/app.py --server.address=0.0.0.0 --server.port=8501
+    depends_on:
+      - pipeline
+    environment:
+      - PYTHONUNBUFFERED=1
